@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leave_status__c</fullName>
+    <label>Leave status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Deined</fullName>
+                <default>false</default>
+                <label>Deined</label>
+            </value>
+            <value>
+                <fullName>Processing</fullName>
+                <default>true</default>
+                <label>Processing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

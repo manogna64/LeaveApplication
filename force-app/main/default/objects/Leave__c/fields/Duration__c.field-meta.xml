@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration__c</fullName>
+    <externalId>false</externalId>
+    <formula>(Leave_end_date__c -  Leave_start_date__c + 1) - 
+IF( ISPICKVAL( Partial_days__c ,  &quot;Leave_start_date__c  &amp;  Leave_end_date__c&quot; ) , 1, IF( ISPICKVAL( Partial_days__c , &quot;None&quot;), 0, 0.5))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
